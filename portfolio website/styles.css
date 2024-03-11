@@ -1,0 +1,9 @@
+@media screen {
+    body {
+      font-size: 13px;
+    }
+  }
+  
+  .navbar {
+    position: fixed;
+  }
