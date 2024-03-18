@@ -1,0 +1,148 @@
+/* define all the color variables */
+:root {
+    --text-01: white;
+    --background-01: blue;
+    --background-02: black;
+    --border-color: gray;
+    --button: green;
+    --error-01: yellow;
+    --error-02: red;
+  }
+  
+  /* reset all the elements for padding, margin, box-sizing */
+  *,
+  ::before,
+  ::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  /* body -- all the stuff displayed in the screen that the users can see */
+  body {
+    background-color: var(--background-02);
+    font-size: 22px;
+    color: var(--text-01);
+    font-family: Helvetica, Arial;
+    padding: 10px 20px;
+    min-height: 100vh;
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  h1 {
+    text-align: center;
+    font-family: fantasy;
+    margin: 20px auto;
+    max-width: 500px;
+  }
+  
+  form {
+    background-color: var(--background-01);
+    text-align: center;
+    border: 3px solid var(--border-color);
+    width: 90%;
+    max-width: 500px;
+    margin: auto 25px;
+    padding: 15px 15px;
+    border-radius: 10px;
+    /* font-size: 25px; */
+  }
+  
+  fieldset {
+    border: none;
+    height: 100%;
+    padding: 25px;
+    margin: 10px 20px;
+    
+  }
+  
+  label {
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 13px;
+  }
+  
+  input {
+    width: 100%;
+    height: 25px;
+    border: 15px solid var(--border-color);
+    color: white;
+    background-color: gray;
+    font-size: 2.5rem;
+    font-weight: bold;
+    display: block;
+    border-radius: 5px;
+  }
+  
+  button {
+    margin-top: 13px;
+    font-size: 19px;
+    width: 100%;
+    background-color: var(--button);
+    cursor: pointer;
+    border: 2px solid var(--border-color);
+    border-radius: 5px;
+  }
+  
+  .output {
+    border: 3px solid var(--border-color);
+    border-radius: 9px;
+    margin-top: 35px;
+    width: 90%;
+    height: 40px;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--text-01);
+    overflow-wrap: break-word;
+    background-color: gray;
+  }
+  
+  .alert {
+    border: 3px solid var(--error-01);
+    border-radius: 9px;
+    color: var(--error-02);
+    font-size: 1.0rem;
+    background-color: pink;
+    text-align: center;
+    /* margin: 15px 20px; */
+  }
+  
+  /* hide the output when there is no input received */
+  .hidden {
+    display: none;
+  }
+  
+  
+  /* 
+  
+  *,
+  ::before,
+  ::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  purpose: reset the default padding, margin, and box-sizing for all elements and pseudo elements in the document.
+  
+  notes: 
+  
+  pseudo-elements: ::before, ::after
+  
+  *---select all elements
+  
+  ::before --- select all pseudo-elements getting inserted before the current element
+  
+  ::after --- select all pseudo-elements getting inserted after the current element
+  
+  
+    */
+  
