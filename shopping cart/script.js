@@ -196,6 +196,11 @@ clearCartBtn.addEventListener(
     "click", cart.clearCart.bind(cart)//bind() will create a new function
   ) // which will be called with "this" keyword set to the provided value ?
 
+  // cart.clearCart.bind(cart)
+  // why use bind()?
+  // to borrow clearCart method from cart object    :D
+
+
 
 /* 
 steps:
