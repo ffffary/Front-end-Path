@@ -46,5 +46,14 @@ movePlayer()
 
 8. define a platform class
 
+9. add logic to ensure that platforms move as the player moves
+
+10. add collision detection logic to the game - otherwise the 
+the player will jump through the platform instead of staying on top of it
+
+11. add platform Detection logic to the game
+
+12. add logic for the checkpoints
+
 
 */
