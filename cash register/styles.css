@@ -1,0 +1,179 @@
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box
+  }
+  
+  :root {
+    --button: #FF9800;
+    --background: #2C7865;
+    --machine-color: #90D26D;
+    --display: #D9EDBF;
+  }
+  
+  body {
+    background-color: var(--background);
+    color: white;
+  }
+  
+  main {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px 10px;
+  }
+  
+  h1 {
+    font-family: "Gill Sans", sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 2.0rem;
+    margin: 5px 0px;
+  }
+  
+  .output-div {
+    text-align: left;
+    font-size: 1.5rem;
+  }
+  
+  .customer-input {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 12px 0px 0px;
+    height: 25px;
+    width: 170px;
+  }
+  
+  label {
+    font-size: 1.25rem;
+  }
+  
+  .purchase-button {
+    cursor: pointer;
+    height: 20px;
+    width: 75px;
+    font-size: 14px;
+    background-image: linear-gradient(#D9EDBF, #D9EDBF);
+    border: 3px solid #90D26D;
+    color: var(--background);
+    font-weight: bold;
+  }
+  
+  
+  .machine-div {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  
+  /* .machine-top {
+    background-color: var(--machine-color);
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.0rem;
+    height: 50px;
+    width: 170px;
+    margin-left: -40px;
+    border: 3px solid var(--machine-color);
+    margin-top: 22px;
+  } */
+  
+  .price-screen {
+    background-color: var(--machine-color);
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.0rem;
+    height: 50px;
+    width: 170px;
+    margin-left: -40px;
+    border: 3px solid var(--machine-color);
+    margin-top: 20px;
+  }
+  
+  /* .price-screen {
+    background-color: black;
+    border:3px solid black;
+    color: white;
+    height: 35px;
+    width: 100px;
+    margin-top: -50px;
+    margin-left: 20px;
+  } */
+  
+  /* #price {
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+  } */
+  
+  .connector {
+    background-color: var(--machine-color);
+    height: 40px;
+    width: 40px;
+    margin-top: 0px;
+    margin-right: 20px;
+  }
+  
+  .machine-body {
+    display: flex;
+    justify-content: space-around;
+    border-radius: 20px 20px 0 0;
+    padding-top:20px;
+    background-color: var(--machine-color);
+    height: 250px;
+    width: 325px;
+  }
+  
+  .buttons-container {
+    width: 25%;
+  }
+  
+  .btn {
+    width: 20px;
+    height: 20px;
+    border-radius: 10%;
+    border: none;
+    background-color: black;
+      justify-content: space-between;
+  }
+  
+  .change-drawer {
+    font-size: 1.1rem;
+    background-color: #D9EDBF;
+    width: 55%;
+    height: 93%;
+    color: black;
+    padding: 15px;
+  }
+  
+  .machine-bottom {
+    background-color: var(--machine-color);
+    height: 50px;
+    width: 325px;
+    margin-top: 15px;
+  }
+  
+  .circle {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: black;
+    margin: 15px auto;
+  }
+  
+  
+  
