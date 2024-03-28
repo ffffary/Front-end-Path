@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --background-color: #CAB8FF;
+    --phone-color: #C1FFD7;
+    --camera-color: white;
+    --font-color: #57CC99;
+    --result-div-color: #C7FFD8;
+    --center-text: center;
+  }
+  
+  h1 {
+    font-size: 1.6rem;
+    font-family: "Gill Sans", sans-serif;
+  }
+  
+  body {
+    position: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 400px;
+    background-color: var(--background-color);
+    padding: 10px;
+    margin: auto;
+    color: white;
+  }
+  
+  /* label {
+    margin-top: 10px;
+  } */
+  
+  .phone-container {
+    background-color: black;
+    border-radius: 20px;
+    height: 520px;
+    width: 95%;
+    margin-left: 7px;
+  }
+  
+  
+  #search-input {
+    font-size: 17px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: black;
+    border-radius: 10px;
+    width: 65%;
+  }
+  
+  .search-btn {
+    border-radius: 7px;
+    font-size: 15px;
+    background-image: linear-gradient(#ffffff, #6C00FF);
+    cursor: pointer;
+  }
+  
+  .results-div {
+    width: 90%;
+    height: 200px;
+    background-color: #EFF5F5;
+    justify-content: center;
+    align-items: center;
+    position: flex;
+    margin-left: 15px;
+    margin-top: 10px;
+  }
+  
+  
+  
+  
+  
+  
+  table {
+    border: 1px solid gray;
+    margin: 15px auto;
+    width: 90%;
+    height: 200px;
+  
+  }
