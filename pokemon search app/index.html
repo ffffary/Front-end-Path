@@ -2,21 +2,73 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" width="device-width, initial-scale=1.0">
     <title>Pokemon Search App</title>
     <link rel="stylesheet" href="styles.css">
   </head>
 
-  <h1>Pokémon Search App</h1>
+  
   <body>
     <main>
-      
+      <h1>Pokémon Search App</h1>
       <div class="phone-container">
-        <label for="search-info">Search for Pokémon Name or ID:</label> <br >
-        <input id="search-input" class="search-input" />
-        <button id="search-button" class="search-btn" type="submit">Search</button>
-        <div class="results-div"></div>
-        <div class="stats-div">
+        <form>
+            <label for="search-info">Search for Pokémon Name or ID:</label> <br >
+            <input id="search-input" class="search-input" />
+            <button id="search-button" class="search-btn" type="submit">Search</button>
+        </form>
+        
+        <div class="results-div">
+            <div class="top-container">
+                <div class="name-and-id">
+                    <span id="pokemon-name"></span>
+                    <span id="pokemon-id"></span>
+                </div>
+                <div class="size">
+                    <span id="weight"></span>
+                    <span id="height"></span>
+                </div>
+                <div id="sprite-container" class="sprite-container"></div>
+                <div id="types"></div>
+            </div>
+            <div class="bottom-container">
+                <table>
+                    <tr>
+                        <th>Base</th>
+                        <th>Stats</th>
+                    </tr>
+                    <tr>
+                        <td>HP:</td>
+                        <td id="hp"></td>
+                    </tr>
+                    <tr>
+                        <td>Attack:</td>
+                        <td id="attack"></td>
+                    </tr>
+                    <tr>
+                        <td>Defense:</td>
+                        <td id="defense"></td>
+                    </tr>
+                    <tr>
+                        <td>Sp. Attack:</td>
+                        <td id="special-attack"></td>
+                    </tr>
+                    <tr>
+                        <td>Sp. Defense:</td>
+                        <td id="special-defense"></td>
+                    </tr>
+                    <tr>
+                        <td>Speed:</td>
+                        <td id="speed"></td>
+                    </tr>
+                </table>
+            </div>
+            
+        </div>
+
+        <!-- out of date -->
+        <!-- <div class="stats-div">
           <table>
             <thead>
               <tr>
@@ -30,8 +82,8 @@
               </tr>
               <tr>
                 <th scope="row">Attack:</th>
-              </tr>
-              <tr>
+              </tr> -->
+              <!-- <tr>
                 <th scope="row">Defense:</th>
               </tr>
               <tr>
@@ -44,7 +96,8 @@
                 <th scope="row">Speed:</th>
               </tr>
             </tbody>
-          </table>
+          </table> -->
+          <!-- end here -->
         </div>
       </div>
 
