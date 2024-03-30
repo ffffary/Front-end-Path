@@ -38,6 +38,7 @@
     height: 50px;
     width: 200px;
     margin: 15px 0;
+    
 }
 
 .green {
@@ -54,6 +55,12 @@
     height: 50px;
     width: 200px;
     margin: 15px 0;
+    
+}
+
+p {
+    color: white;
+    text-transform: uppercase;
 }
 
 .yellow {
