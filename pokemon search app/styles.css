@@ -17,14 +17,9 @@
   body {
 
     line-height:1.5;
-    /* text-align: center; */
-    /* flex-wrap: wrap; */
-    /* width: 100%; */
     height: 100vh;
-    background-color: var(--background-color);
-    padding: 10px;
+    background-color: blueviolet;
     margin: auto;
-    color: white;
   }
 
   img {
@@ -42,35 +37,46 @@
     font-size: 1.6rem;
     font-family: "Gill Sans", sans-serif;
     color: white;
-    text-align: center;
   }
-  
-  /* label {
-    margin-top: 10px;
-  } */
   
   .phone-container {
     background-color: black;
     border-radius: 20px;
-    /* height: 520px; */
-    /* width: 95%; */
+    height: 520px;
     width: 325px;
-    /* margin-left: 7px; */
     border: 1px solid #EFF5F5;
     box-shadow: none;
   }
+
+  #user-input-form {
+    padding: 10px;
+    display: row;
+    text-align: center;
+    justify-self: center;
+  }
   
-  
+  label {
+    color: white;
+    font-size:  18px;
+    font-weight: bold;
+    padding: 10px 10px;
+  }
+
   #search-input {
     font-size: 17px;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin: 5px 0;
     color: black;
     border-radius: 10px;
     width: 65%;
+    padding-left: 10px;
   }
+
+  #search-input:focus-visible, #search-btn:focus-visible {
+      outline: 2px solid #6C00FF;
+    }
   
-  .search-btn {
+  
+  #search-btn {
     border-radius: 7px;
     font-size: 15px;
     background-image: linear-gradient(#ffffff, #6C00FF);
@@ -78,23 +84,90 @@
   }
   
   .results-div {
-    width: 90%;
-    height: 200px;
     background-color: #EFF5F5;
+    align-items: center;
+    position: flex;
+    margin: 10px 0;
+    padding: 5px;
+    flex-direction: column;
+
+    /* 
+    questions:
+    1.why don't we set width and height for the results-div?
+    2.flex-grow: 2;?
+    */
+  }
+  
+  .top-container, .bottom-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 325px;
+  }
+
+  .top-container {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #EFF5F5;
+  }
+
+
+  .name-and-id {
+    height: 28px;
+    font-size: 1.1em;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+  }
+
+  .size {
+    height: 22px;
+    font-size: 0.85rem;
+  }
+
+  #sprite-container {
+    flex-grow: 2; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #sprite {
+    width: 180px;
+  }
+
+  #types {
+    min-height: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 5px;
+  }
+
+  /* .type {
+    width: 66px;
+    padding: 5px;
+    font-size: 0.7rem;
+    text-align: center;
+    border-radius: 5px;
+    background-color: red;
+    text-transform: uppercase;
+  } */
+  
+  
+  .bottom-container {
+    width: 300px;
+    height: 200px;
+    background-color: #CAB8FF;
     justify-content: center;
     align-items: center;
     position: flex;
-    margin-left: 15px;
-    margin-top: 10px;
+
   }
   
-  
-  
-  
-  
-  
+  /* start here  */
   table {
     border: 1px solid gray;
+    border-collapse: collapse;
     margin: 15px auto;
     width: 90%;
     height: 200px;
