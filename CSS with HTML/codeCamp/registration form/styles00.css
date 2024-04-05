@@ -1,0 +1,46 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #81b7b0;
+    line-height: 25px;
+}
+
+
+fieldset {
+    border: none;
+    padding: 0;
+}
+
+.top-line, .bottom-line {
+    border: 1.5px solid rgb(24, 85, 24);
+    margin: 25px 0 25px 0;
+}
+
+
+#first-name,  #last-name, #user-email, #user-pwd, #user-age, #user-bio, #platform-select, #profile-picture {
+    background-color: #C0EEF2;
+}
+
+#user-bio {
+    height: 60px;
+    width: 100%;
+}
+
+#submit-btn {
+    background: linear-gradient(180deg, cyan, green);
+    border: 2px solid #41a99d; 
+    
+}
+
+a, :visited {
+    color: black;
+}
+
+a:hover {
+    color: blue;
+}
+
+.terms-and-conditions {
+    margin: 20px 0 20px 0;
+}
