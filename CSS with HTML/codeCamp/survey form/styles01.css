@@ -7,7 +7,7 @@
 }
 
 /* mobile friendly alternative to using background-attachment: fixed */
-/* body::before {
+body::before {
     content: '';
     position: fixed;
     top: 0;
@@ -18,14 +18,29 @@
     background: var(--color-darkblue);
     background-image: linear-gradient(
         115deg,
-        rgba(58, 58, 158, 0.8),
-        rgba(136, 136, 206, 0.7)
+        /* rgba(58, 58, 158, 0.8),
+        rgba(136, 136, 206, 0.7) */
+        #e6a1cf, #94e82e80
       ),
       url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-  } */
+  }
+
+/* explain---body:before {...} */
+/*
+body::before ------ a pseudo element created before the body element
+{...} ---- styles for this newly created element
+content: '' ---- generate an empty box before the body content
+position: fixed  ---- the position is relative to the viewport, 
+it stays at the same place, even if the page is scrolled (thus, the container gets scrolled 
+up and down, but the background image stays still)
+z-index: -1 ----- this proper places the pseudo element behind all other content on the page 
+background-size: cover ---- it ensures the background image covers the entire pseudo element
+background-repeat: no-repeat ---- revents the background image from repeating
+background-position: center --- centers the background image
+*/
 
 body {
     margin: 0 auto;
@@ -51,8 +66,8 @@ body {
 
 .container {
     width: 100%;
-    /* margin: 0 auto;
-    display: block; */
+    margin: 0 auto;
+    display: block;
 }
 
 @media (min-width: 480px) {
