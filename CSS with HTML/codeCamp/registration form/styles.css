@@ -17,6 +17,7 @@ body {
     width: 60vw;
     max-width: 500px;
     min-width: 300px;
+    /* center the form entire section */
     margin: 0 auto;
     padding-bottom: 2em;
   }
@@ -25,8 +26,10 @@ body {
     border: none;
     padding: 2rem 0;
     border-bottom: 3px solid #3b3b4f;
+    /* remove the left, top, right border of the fieldset, keep bottom only */
   }
   
+  /* set the bottom-border of the last fieldset to be none, then no lines show up there */
   fieldset:last-of-type {
     border-bottom: none;
   }
