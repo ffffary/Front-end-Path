@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* mobile friendly alternative to using background-attachment: fixed */
+/* body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: var(--color-darkblue);
+    background-image: linear-gradient(
+        115deg,
+        rgba(58, 58, 158, 0.8),
+        rgba(136, 136, 206, 0.7)
+      ),
+      url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  } */
+
+body {
+    margin: 0 auto;
+    display: block;
+    width: 80vw;
+    /* height: 100vh; */
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    background: 
+        linear-gradient(#e6a1cf, #94e82e80),
+        url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+}
+
+.header {
+    padding: 0 0.625rem;
+    margin-bottom: 1.875rem;
+}
+
+.clue {
+    margin-left: 0.25rem;
+    font-size: 0.9rem;
+}
+
+.container {
+    width: 100%;
+    /* margin: 0 auto;
+    display: block; */
+}
+
+@media (min-width: 480px) {
+    form {
+      padding: 2.5rem;
+    }
+  }
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    } 
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+h1 {
+    font-size: 2em;
+    display: block;
+}
+
+p {
+    margin-top: 10px;
+    margin-bottom: 0.5rem;
+  }
+
+.description {
+    font-style: italic;
+}
+
+.text-center {
+    text-align: center;
+}
+
+select, input, textarea {
+    width: 100%;
+    padding: 5px 11px;
+    border-radius: 5px;
+    border-color: white;
+    font-size: 15px;
+    font-family: inherit;
+}
+
+form {
+    background-color: #c3ede1;
+    /* padding: 2.5rem 0.625rem; */
+    padding: 40px 40px;
+    border-radius: 0.25rem;
+  }
+
+.form-group {
+    width: 100%;
+}
+
+input {
+   width: 100%; 
+   height: 25px;
+   border-radius: 5px;
+   border-color: white;
+   border: none;
+}
+
+.inline {
+    width: unset;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+/* label {
+    display: block;
+    margin: 10px 0 10px 0;
+} */
+
+label {
+    display: flex;
+    align-items: center;
+    font-size: 1.125rem;
+    margin-bottom: 0.4rem;
+    margin-top: 0.4rem;
+  }
+
+fieldset {
+    border: none;
+    padding: 0;
+}
+
+
+#comment {
+    width: 100%;
+    height: 100px;
+    border: white;
+
+    /* min-height: 120px;
+    padding: 0.625rem; */
+    resize: vertical;
+}
+
+
+
+/* input[type="submit"] {
+    background: linear-gradient(180deg, rgb(99, 106, 177), rgb(23, 200, 100));
+    border: 2px solid #71b66b;
+    border-radius: 5px;
+    font-size: 1em;
+} */
+
+#form-btn {
+    width: 100%;
+    background: linear-gradient(180deg, rgb(99, 106, 177), rgb(23, 200, 100));
+    border: 2px solid #71b66b;
+    border-radius: 5px;
+    font-size: 1em;
+    padding: 0.2rem;
+    cursor: pointer;
+    margin: 30px auto;
+}
+
+
