@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles02.css" />
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+                <h1 id="title" class="text-center">freeCodeCamp Survey Form</h1>
+                <p id="description" class="description text-center">Thank you for taking the time to help us improve the platform</p>
+            </header>
+            <form id="survey-form">
+                <!-- user personal info section: name, email, age -->
+                <div class="form-group">
+                    <label id="name-label">Name</label>
+                    <input id="name" value="name" type="text" placeholder="Enter your name" required/>
+                </div>
+                <div class="form-group">
+                    <label id="email-label">Email</label>
+                    <input id="email" value="email" type="email" placeholder="Enter your email" required/>
+                </div>
+                <div class="form-group">
+                    <label id="number-label">Age<span class="clue">(optional)</span></label>
+                    <input id="number" value="number" min="3" max="120" type="number" placeholder="Age"/>
+                </div>
+                <!-- select role section -->
+                <div class="form-group">
+                    <p>Which option best describes your current role?</p>
+                    <select id="dropdown" required>
+                        <option value="" selected disabled>Select current role</option>
+                        <option value="1">Student</option>
+                        <option value="2">Full Time Job</option>
+                        <option value="3">Full Time Learner</option>
+                        <option value="4">Prefer not to say</option>
+                        <option value="5">Other</option>
+                    </select>
+                </div>               
+                <!-- recommendation willingness -->
+                <div class="form-group">
+                    <p>Would you recommend freeCodeCamp to a friend?</p>
+                    <label for="refers"><input class="inline" id="refers" name="refers" type="radio" value="refers"/>Definitely</label>
+                    <label for="refers"><input class="inline" id="refers" name="refers" type="radio" value="refers"/>Maybe</label>
+                    <label for="refers"><input class="inline" id="refers" name="refers" type="radio" value="refers"/>Not sure</label>
+                </div>
+                <!-- favorite features -->
+                <div class="form-group">
+                    <p>What is your favorite feature of freeCodeCamp?</p>
+                    <select id="features" name="features" required>
+                        <option value="" selected disabled>Select an option</option>
+                        <option value="1">Challenges</option>
+                        <option value="2">Projects</option>
+                        <option value="3">Community</option>
+                        <option value="4">Open Source</option>
+                    </select>
+                </div>
+                <!-- improvements thoughts section -->
+                <div class="form-group">
+                    <p>What would you like to see improved?<span class="clue">(Check all that apply)</span></p>
+                    <label for="suggestions"><input class="inline" type="checkbox" value="suggestions" id="suggestions" name="suggestions"/>Front-end Projects</label>
+                    <label for="suggestions"><input class="inline" type="checkbox" value="suggestions" id="suggestions" name="suggestions"/>Back-end Projects</label>
+                    <label for="suggestions"><input class="inline" type="checkbox" value="suggestions" id="suggestions" name="suggestions"/>Data Visualization</label>
+                    <label for="suggestions"><input class="inline" type="checkbox" value="suggestions" id="suggestions" name="suggestions"/>Challenges</label>
+                    <label for="suggestions"><input class="inline" type="checkbox" value="suggestions" id="suggestions" name="suggestions"/>Open Source Community</label>
+                    <label for="suggestions"><input class="inline" type="checkbox" value="suggestions" id="suggestions" name="suggestions"/>Gitter help rooms</label>
+                    <label for="suggestions"><input class="inline" type="checkbox" value="suggestions" id="suggestions" name="suggestions"/>Videos</label>
+                    <label for="suggestions"><input class="inline" type="checkbox" value="suggestions" id="suggestions" name="suggestions"/>City Meetups</label>
+                    <label for="suggestions"><input class="inline" type="checkbox" value="suggestions" id="suggestions" name="suggestions"/>Wiki</label>
+                    <label for="suggestions"><input class="inline" type="checkbox" value="suggestions" id="suggestions" name="suggestions"/>Forum</label>
+                    <label for="suggestions"><input class="inline" type="checkbox" value="suggestions" id="suggestions" name="suggestions"/>Additional Courses</label>
+                </div>
+                <!-- user comment -->
+                <div class="form-group">
+                    <p>Any comments or suggestions?</p>
+                    <textarea id="comment" placeholder="Enter your comment here..."></textarea>
+                </div>
+                <!-- submit the form -->
+                <div class="form-group"></div>
+                    <button type="submit" id="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+        
+    </body>
+</html>
