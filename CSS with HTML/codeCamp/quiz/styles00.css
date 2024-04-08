@@ -1,0 +1,132 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+body {
+    font-family: Verdana, Tahoma, sans-serif;
+    color: black;
+    background: azure;
+    margin: 0;
+}
+
+header {
+    background-color: #0a0a23;
+    width: 100%;
+    height: 50px;
+    /* padding: 5px; */
+    display: flex;
+}
+
+#logo {
+    background-color: #0a0a23;
+    width: max(100px, 18vw);
+    padding: 0.4rem;
+    /* aspect-ratio: 1 / 1; */
+}
+
+h1 {
+    color: #f1be32;
+    font-size: min(5vw, 1.2em);
+}
+
+/* specify the area for the nav section - otherwise, lists will stay right next to each other */
+nav {
+    width: 50%;
+    max-width: 300px;
+    height: 50px;
+  }
+
+nav > ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+h1,
+h2 {
+  font-family: Verdana, Tahoma;
+}
+
+h2 {
+    border-bottom: 4px solid #dfdfe2;
+  }
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
+
+
+  /* fary's section */
+  fieldset {
+    border: none;
+}
+
+
+
+main, footer {
+    padding: 5px;
+}
+
+form {
+    display: block;
+    width: 600px;
+    margin: 40px auto;
+}
+
+#student-info, #html-questions, #css-questions {
+    border-bottom: 3px solid gray;
+    margin-bottom: 10px;
+}
+
+fieldset input[name="bool"] {
+    display: block;
+
+}
+
+.info div {
+    margin: 15px auto;
+}
+
+.info input {
+    margin-left: 3px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+.answer-list {
+    display: block;
+}
+
+footer {
+    background-color: #0a0a23;
+    color: white;
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    line-height: 23px;
+}
+
+footer a {
+    color: white;
+}
+
+#submit-btn {
+    width: 60%;
+    height: 40px;
+    margin: 30px auto;
+    border: 3px solid gray;
+    font-size: 1.2rem;
+}
